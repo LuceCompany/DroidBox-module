@@ -27,9 +27,9 @@
 
 /* I not shure, but create /dev/ion like /dev/ashmem  */
 /* If get error then to remove all 3#definen  */
-#define ION_NAME_PREFIX "dev/ashmem/"
-#define ION_NAME_PREFIX_LEN (sizeof(ION_NAME_PREFIX) - 1)
-#define ION_FULL_NAME_LEN (ION_NAME_LEN + ION_NAME_PREFIX_LEN)
+/* #define ION_NAME_PREFIX "dev/ashmem/" */
+/* #define ION_NAME_PREFIX_LEN (sizeof(ION_NAME_PREFIX) - 1) */
+/* #define ION_FULL_NAME_LEN (ION_NAME_LEN + ION_NAME_PREFIX_LEN) */
 
 static struct ion_device *internal_dev;
 static int heap_id;

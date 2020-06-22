@@ -28,11 +28,7 @@ else
         ls -alh /dev/binderfs /dev/ashmem;
 
     else
-        echo "Your distribution dont support android/binder_linux";
+        echo "Your kernel module version < 5.0";
+        echo "Ashmem_linux and Binder_linux not installed default in kernel";
     fi
 fi
-
-#TODO:
-## Probably I must copy binder_linux.ko to this same folder what ashmam_linux ##
-## Next modprobe binder_linux ? ##
-## Or Mount ? ##

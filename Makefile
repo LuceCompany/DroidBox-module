@@ -7,6 +7,8 @@ clean:
 distclean: clean
 
 uninstall: clean
-	./uninstall.sh
+	sudo umount /dev/binderfs
+    sudo modprobe -r ashmem_linux
+	sudo rm -rf /dev/binderfs
 
 .PHONY: install clean distclean uninstall

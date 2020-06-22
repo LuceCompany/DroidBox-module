@@ -1,2 +1,1 @@
 KERNEL=="ashmem", NAME="%k", MODE="0666"
-KERNEL=="ion", NAME="%k", MODE="0666"

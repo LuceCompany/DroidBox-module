@@ -1,5 +1,4 @@
 install:
-	sudo
 	chmod a+x install.sh
 	chmod a+x uninstall.sh
 	./install.sh

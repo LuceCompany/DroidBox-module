@@ -7,6 +7,6 @@ then
     echo "You must be login as root";
     exit 1;
 else
-    sudo dkms remove anbox-ashmem/1 --all;
-    echo "You must rebbot system to finish uninstall  dkms module"
+    ummount /dev/binderfs;
+    rm -rf /dev/binderfs;
 fi

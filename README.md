@@ -38,5 +38,5 @@ crw-------  1 root root 510, 0 cze 30 12:51 binder-control
 
 * To uninstall anbox-module
 ```sh
-$ sudo make uninstall
+$ sudo make clean
 ```

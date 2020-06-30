@@ -1,11 +1,7 @@
-[![Build Status](https://travis-ci.org/anbox/anbox-modules.svg?branch=master)](https://travis-ci.org/anbox/anbox-modules)
-
 # Anbox Kernel Modules for Ubuntu based system
 
 Ubuntu based system have build binder_linux in the kernel located kernel/drivers/android/`**`
-This repository contains the kernel modules necessary to run the Anbox
-Android container runtime. They're split out of the original Anbox
-repository to make packaging in various Linux distributions easier.
+This repository will check if our system has ashmen and binder kernel built in.
 # Install Instruction
 Check install `dkms` and linux-headers on your system.
 ```sh
@@ -23,10 +19,21 @@ $ cd anbox-modules
 $ sudo make install
 ```
 You are expected to see output like:
+* `lsmod | grep -e ashmem_linux -e binder_linux`:
 
 ```
-ashmem_linux           16384  0
-crw-rw-rw- 1 root root  10, 55 Jun 19 16:30 /dev/ashmem
+binder_linux          180224  0
+ashmem_linux           20480  0
+```
+* `ls -alh /dev/binderfs /dev/ashmem`:
+```
+crw------- 1 root root 10, 57 cze 30 12:50 /dev/ashmem
+
+/dev/binderfs:
+razem 0
+drwxr-xr-x  2 root root      0 cze 30 12:51 .
+drwxr-xr-x 22 root root   4,6K cze 30 12:51 ..
+crw-------  1 root root 510, 0 cze 30 12:51 binder-control
 ```
 
 * To uninstall anbox-module

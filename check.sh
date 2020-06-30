@@ -18,7 +18,7 @@ else
         
         # MOUNT BINDER #
         sudo modprobe binder_linux;
-        if [! -f "/dev/binderfs" ];
+        if [ ! -f "/dev/binderfs" ];
         then
             mkdir /dev/binderfs;
         fi

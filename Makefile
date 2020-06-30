@@ -4,7 +4,7 @@ install:
 
 clean:
 	sudo umount /dev/binderfs
-    sudo modprobe -r ashmem_linux
+	sudo modprobe -r ashmem_linux
 	sudo rm -rf /dev/binderfs
 
 distclean: clean

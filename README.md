@@ -14,8 +14,8 @@ Package name for linux-headers varies on different distributions, e.g.
 
 * Run Makkefile script automate the installation anbox-module for ubuntu based system:
 ```sh
-$ git clone https://github.com/LuceCompany/anbox-modules.git
-$ cd anbox-modules
+$ git clone https://github.com/LuceCompany/android-module.git
+$ cd android-module
 $ sudo make install
 ```
 You are expected to see output like:

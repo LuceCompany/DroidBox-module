@@ -36,7 +36,7 @@ drwxr-xr-x 22 root root   4,6K cze 30 12:51 ..
 crw-------  1 root root 510, 0 cze 30 12:51 binder-control
 ```
 
-* To uninstall anbox-module
+* To stop android-module
 ```sh
 $ sudo make clean
 ```

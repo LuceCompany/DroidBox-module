@@ -3,7 +3,7 @@
 Ubuntu based system have build binder_linux in the kernel located kernel/drivers/android/`**`
 This repository will check if our system has ashmen and binder kernel built in.
 # Install Instruction
-Check install `dkms` and linux-headers on your system.
+Check install `dkms` and linux-headers in your system.
 ```sh
 $ sudo apt list --installed | grep dkms
 $ sudo apt list --installed | grep linux-headers
@@ -14,8 +14,8 @@ Package name for linux-headers varies on different distributions, e.g.
 
 * Run Makkefile script automate the installation anbox-module for ubuntu based system:
 ```sh
-$ git clone https://github.com/LuceCompany/android-module.git
-$ cd android-module
+$ git clone https://github.com/LuceCompany/DroidBox-module.git
+$ cd DroidBox-module
 $ sudo make install
 ```
 You are expected to see output like:
@@ -36,7 +36,7 @@ drwxr-xr-x 22 root root   4,6K cze 30 12:51 ..
 crw-------  1 root root 510, 0 cze 30 12:51 binder-control
 ```
 
-* For stop android-module
+* For stop {ashmem,binder} in system 
 ```sh
 $ sudo make clean
 ```

@@ -13,6 +13,12 @@ then
 else
     if [ -f "$EX_BINDER" ] && [ -f "$EX_ASHMEM" ];
     then
+        ## Load Anbox.conf in module.d ##
+        ## IN FUTURE CHENGE ON droidbox.conf ##
+        if [ ! -f "/usr/lib/modules-load.d/anbox.conf" ];
+        then
+            cp -r "anbox.conf" "/usr/lib/modules-load.d/"
+        fi
         # LOAD ASHMEM MODULE #
         sudo modprobe ashmem_linux;
         

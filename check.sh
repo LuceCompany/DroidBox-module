@@ -17,8 +17,13 @@ else
         ## IN FUTURE CHENGE ON droidbox.conf ##
         if [ ! -f "/usr/lib/modules-load.d/droidbox.conf" ];
         then
-            cp -r "droidbox.conf" "/usr/lib/modules-load.d/"
+            cp -r "droidbox.conf" "/usr/lib/modules-load.d/";
         fi
+
+        # Add sha512 for secure boot DroidBox
+        sudo kmodsign sha512 /var/lib/shim-signed/mok/MOK.priv /var/lib/shim-signed/mok/MOK.der $EX_ASHMEM
+
+
         # LOAD ASHMEM MODULE #
         sudo modprobe ashmem_linux;
         

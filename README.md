@@ -1,7 +1,8 @@
-# Checking out Anbox-modules-dkms (android drivers, default in linux kernel> = 5.0) in system and enabling it.
+# Enable out DroidBox-modules (android drivers, default in linux kernel> = 5.0) in system and enabling it.
 
+Project based on `Anbox` [orginal project](https://github.com/anbox)
 Ubuntu based system have build binder_linux in the kernel located kernel/drivers/android/`**`
-This repository will check if our system has ashmen and binder kernel built in.
+This repository will check if our system has ashmen and binder kernel built in. In Add Ashmem is enable for secure boot
 
 # Install Instruction
 Check install `dkms` and linux-headers in your system.
@@ -13,7 +14,7 @@ Package name for linux-headers varies on different distributions, e.g.
 `linux-headers-**-**-generic` (Ubuntu)
 
 
-* Run Makkefile script automate the installation anbox-module for ubuntu based system:
+* Run Makkefile script automate the installation DroidBox-module for ubuntu based system:
 ```sh
 $ git clone https://github.com/LuceCompany/DroidBox-module.git
 $ cd DroidBox-module

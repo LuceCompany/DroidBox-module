@@ -1,7 +1,8 @@
-# Anbox Kernel Modules for Ubuntu based system
+# Checking out Anbox-modules-dkms (android drivers, default in linux kernel> = 5.0) in system and enabling it.
 
 Ubuntu based system have build binder_linux in the kernel located kernel/drivers/android/`**`
 This repository will check if our system has ashmen and binder kernel built in.
+
 # Install Instruction
 Check install `dkms` and linux-headers in your system.
 ```sh
